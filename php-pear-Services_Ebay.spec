@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - interface to eBay's XML-API
 Summary(pl):	%{_pearname} - interfejs do API XML eBay
 Name:		php-pear-%{_pearname}
-Version:	0.10.1
+Version:	0.11.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}alpha.tgz
-# Source0-md5:	2af2f4aad093a45c7ad506e9dd79857f
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	f2594a7530d58f89ac72e46c2b3caf32
 URL:		http://pear.php.net/package/Services_Ebay/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -42,17 +42,17 @@ Ta klasa ma w PEAR status: %{_status}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/{Call,Model,Transport}
 
-install %{_pearname}-%{version}%{_status}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}%{_status}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}%{_status}/%{_subclass}/Call/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Call
-install %{_pearname}-%{version}%{_status}/%{_subclass}/Model/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Model
-install %{_pearname}-%{version}%{_status}/%{_subclass}/Transport/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Transport
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}/%{_subclass}/Call/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Call
+install %{_pearname}-%{version}/%{_subclass}/Model/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Model
+install %{_pearname}-%{version}/%{_subclass}/Transport/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Transport
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}%{_status}/{docs,examples}
+%doc %{_pearname}-%{version}/{docs,examples}
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
