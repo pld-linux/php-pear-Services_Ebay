@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Services
 %define		_subclass	Ebay
-%define		_status		devel
+%define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - interface to eBay's XML-API
 Summary(pl):	%{_pearname} - interfejs do API XML eBay
 Name:		php-pear-%{_pearname}
-Version:	0.7.0
-Release:	2
+Version:	0.8.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	cd6239e562c02aba2d3580b409371673
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}alpha.tgz
+# Source0-md5:	93405b471b24c8f5f8322e2557d36478
 URL:		http://pear.php.net/package/Services_Ebay/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -42,17 +42,17 @@ Ta klasa ma w PEAR status: %{_status}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/{Call,Model,Transport}
 
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}/%{_subclass}/Call/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Call
-install %{_pearname}-%{version}/%{_subclass}/Model/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Model
-install %{_pearname}-%{version}/%{_subclass}/Transport/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Transport
+install %{_pearname}-%{version}%{_status}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}%{_status}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}%{_status}/%{_subclass}/Call/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Call
+install %{_pearname}-%{version}%{_status}/%{_subclass}/Model/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Model
+install %{_pearname}-%{version}%{_status}/%{_subclass}/Transport/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Transport
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/{docs,examples}
+%doc %{_pearname}-%{version}%{_status}/{docs,examples}
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}
