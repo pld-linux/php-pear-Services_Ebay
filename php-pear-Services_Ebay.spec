@@ -8,7 +8,7 @@ Summary:	%{_pearname} - interface to eBay's XML-API
 Summary(pl):	%{_pearname} - interfejs do API XML eBay
 Name:		php-pear-%{_pearname}
 Version:	0.7.0
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
