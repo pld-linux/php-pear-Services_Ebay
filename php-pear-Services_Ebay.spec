@@ -4,8 +4,8 @@
 %define		_status		devel
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Interface to eBay's XML-API
-Summary(pl):	%{_pearname} - Interfejs do API XML eBay
+Summary:	%{_pearname} - interface to eBay's XML-API
+Summary(pl):	%{_pearname} - interfejs do API XML eBay
 Name:		php-pear-%{_pearname}
 Version:	0.6.0
 Release:	1
@@ -20,8 +20,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Interface to eBay's XML-API. It provides objects that are able to
-communicate with eBay as well as models that help you working with
+This is interface to eBay's XML-API. It provides objects that are able
+to communicate with eBay as well as models that help you working with
 the return values like User or Item models.
 
 The Services_Ebay class provides a unified method to use all objects.
@@ -29,9 +29,9 @@ The Services_Ebay class provides a unified method to use all objects.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Interfejs do API XMLowego eBay. Udostêpnia obiekty do komunikacji z
-eBay jak równie¿ modele u³atawiaj±ce pracê ze zwracanymi warto¶ciami
-takimi jak modele U¿ytkownika czy Przedmiotów.
+Jest to interfejs do API XMLowego eBay. Udostêpnia obiekty do
+komunikacji z eBay jak równie¿ modele u³atawiaj±ce pracê ze zwracanymi
+warto¶ciami takimi jak modele U¿ytkownika czy Przedmiotów.
 
 Ta klasa ma w PEAR status: %{_status}.
 
