@@ -29,8 +29,8 @@ The Services_Ebay class provides a unified method to use all objects.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Jest to interfejs do API XMLowego eBay. Udostêpnia obiekty do
-komunikacji z eBay jak równie¿ modele u³atawiaj±ce pracê ze zwracanymi
+Jest to interfejs do API XML-owego eBay. Udostêpnia obiekty do
+komunikacji z eBay jak równie¿ modele u³atwiaj±ce pracê ze zwracanymi
 warto¶ciami takimi jak modele U¿ytkownika czy Przedmiotów.
 
 Ta klasa ma w PEAR status: %{_status}.
