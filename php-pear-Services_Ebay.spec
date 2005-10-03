@@ -8,14 +8,18 @@ Summary:	%{_pearname} - interface to eBay's XML-API
 Summary(pl):	%{_pearname} - interfejs do API XML eBay
 Name:		php-pear-%{_pearname}
 Version:	0.11.0
-Release:	2
+Release:	2.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	f2594a7530d58f89ac72e46c2b3caf32
 URL:		http://pear.php.net/package/Services_Ebay/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:5.0.0
+Requires:	php-curl
 Requires:	php-pear
+Requires:	php-pear-PEAR >= 1:1.3.2
+Requires:	php-pear-XML_Serializer >= 0.14.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
