@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - interface to eBay's XML-API
-Summary(pl):	%{_pearname} - interfejs do API XML eBay
+Summary(pl.UTF-8):   %{_pearname} - interfejs do API XML eBay
 Name:		php-pear-%{_pearname}
 Version:	0.12.0
 Release:	3
@@ -35,16 +35,16 @@ The Services_Ebay class provides a unified method to use all objects.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Jest to interfejs do API XML-owego eBay. Udostêpnia obiekty do
-komunikacji z eBay jak równie¿ modele u³atwiaj±ce pracê ze zwracanymi
-warto¶ciami takimi jak modele U¿ytkownika czy Przedmiotów.
+%description -l pl.UTF-8
+Jest to interfejs do API XML-owego eBay. UdostÄ™pnia obiekty do
+komunikacji z eBay jak rÃ³wnieÅ¼ modele uÅ‚atwiajÄ…ce pracÄ™ ze zwracanymi
+wartoÅ›ciami takimi jak modele UÅ¼ytkownika czy PrzedmiotÃ³w.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -53,7 +53,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
