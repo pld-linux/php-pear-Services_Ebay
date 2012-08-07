@@ -1,13 +1,13 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		Services
 %define		_subclass	Ebay
 %define		_status		alpha
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	Services_Ebay
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - interface to eBay's XML-API
 Summary(pl.UTF-8):	%{_pearname} - interfejs do API XML eBay
 Name:		php-pear-%{_pearname}
 Version:	0.12.0
-Release:	6
+Release:	7
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
@@ -17,8 +17,8 @@ URL:		http://pear.php.net/package/Services_Ebay/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(curl)
 Requires:	php-common >= 3:5.0.0
-Requires:	php-curl
 Requires:	php-pear
 Requires:	php-pear-PEAR-core >= 1:1.3.2
 Requires:	php-pear-XML_Serializer >= 0.16.0
@@ -58,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %doc docs/%{_pearname}/*
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}
+%{php_pear_dir}/Services/*.php
+%{php_pear_dir}/Services/Ebay
