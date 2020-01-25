@@ -1,6 +1,5 @@
 %define		status		alpha
 %define		pearname	Services_Ebay
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - interface to eBay's XML-API
 Summary(pl.UTF-8):	%{pearname} - interfejs do API XML eBay
 Name:		php-pear-%{pearname}
